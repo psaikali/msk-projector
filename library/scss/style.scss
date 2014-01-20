@@ -1,0 +1,239 @@
+/*!
+Theme Name:         Projector
+Theme URI:          http://mosaika.fr/themes/projector
+Description:        Easily display your <strong>W</strong>ork <strong>I</strong>n <strong>P</strong>rogress project
+Version:            0.1
+Author:             Pierre SAIKALI
+Author URI:         http://mosaika.fr
+Text Domain:        msk-projector
+*/
+
+@import "compass/css3";
+@import "recipes";
+@import "settings";
+@import "normalize";
+@import "mixins";
+@import "foundation";
+@import "joints";
+
+/*
+SMALL (BASE) SIZE
+*/
+
+body {
+	&.f-topbar-fixed {
+		padding-top:0;
+	}
+}
+
+.row {
+	&.row-container {
+		overflow: hidden;
+		max-width:100%;
+	}
+}
+
+.move-right a.exit-off-canvas, .move-left a.exit-off-canvas {
+	@include transition(.2s all linear);
+	@include box-shadow(none);
+	background: rgba(0,0,0,.5);
+
+	&:hover {
+		background: rgba(0,0,0,.25);
+	}
+}
+
+@media only screen and (max-width: 40.063em) {
+	#comments.left-off-canvas-menu, #comments.right-off-canvas-menu {
+		width:75%;
+	}
+	#page.move-right > .inner-wrap {
+		@include translate3d(75%, 0, 0);
+	}
+	#page.move-left > .inner-wrap {
+		@include translate3d(-75%, 0, 0);
+	}
+}
+
+#header-bar {
+	border-top:none !important;
+	border-left:none !important;
+	border-right:none !important;
+	height:auto;
+	padding:.875em 0;
+}
+
+#wip-project-title {
+	&.has-left-comments, &.has-left-logo {
+		padding-left:4em;
+	}
+}
+
+#comments-header, #logo {
+	border-left:none;
+	border-right:none;
+	height:auto;
+	width:auto;
+	top:0;
+	bottom:0;
+}
+
+#comments-header {
+	padding:0 1em;
+	width:4em;
+	@include box-shadow(none);
+
+	a {
+		font-size: 2em;
+		line-height: 1;
+		display: block;
+		top: 50%;
+		position: absolute;
+		margin-top: -.45em;
+
+		i {
+			line-height: 1;
+		}
+	}
+}
+
+#logo {
+	@include box-shadow(none);
+
+	&.right-small {
+		margin-right:1em;
+	}
+
+	&.left-small {
+		margin-left:1em;
+	}
+}
+
+#content {
+	padding:1em 1em;
+
+	.wip-item {
+		margin-bottom: 1em;
+
+		.data {
+			img {
+				margin-bottom: 1em;
+			}
+		}
+
+		.desc {
+
+		}
+	}
+}
+
+#comments {
+	@include box-sizing(border-box);
+}
+
+#comment-form {
+	.fields-group {
+		padding:1em 1.325em 0 1.325em;
+
+		label {
+			font-size: .75em;
+			display:none;
+		}
+
+		#notify-label {
+			display:block;
+			margin-bottom: 0;
+		}
+	}
+}
+
+#comment {
+	min-height:10em;
+}
+
+#comments #submit {
+	display:block;
+	width:100%;
+	padding:1em 0;
+	font-size: 1em;
+}
+
+#comments-list {
+	margin:1em 0 1em 0;
+	padding:0 1.325em;
+	list-style:none;
+
+	li.comment {
+		border-top:none !important;
+		border-left:none !important;
+		border-right:none !important;
+		padding-bottom:.75em;
+		margin-top:.75em;
+
+		.comment-author {
+			h5 {
+				margin-top: 0;
+				margin-bottom: .25em;
+			}
+		}
+
+		p {
+			margin-bottom: .5em;
+		}
+
+		time {
+			display: block;
+		}
+	}
+}
+
+/*
+MEDIUM
+*/
+@media only screen and (min-width: 40.063em) {
+	#content {
+		padding:2em 2em;
+	}
+}
+
+/*
+LARGE
+*/
+@media only screen and (min-width: 64.063em) {
+
+
+}
+
+/*
+XLARGE
+*/
+@media only screen and (min-width: 90.063) {
+
+
+}
+
+/*
+XXLARGE
+*/
+@media only screen and (min-width: 120.063em) {
+
+
+}
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+	@import "2x";
+
+}
+
+/*
+PRINT STYLESHEET
+*/
+@media print {
+	@import "print";
+}
