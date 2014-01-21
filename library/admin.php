@@ -26,19 +26,10 @@ function disable_default_dashboard_widgets() {
 }
 
 /*
-Now let's talk about adding your own custom Dashboard widget.
-Sometimes you want to show clients feeds relative to their
-site's content. For example, the NBA.com feed for a sports
-site. Here is an example Dashboard Widget that displays recent
-entries from an RSS Feed.
-
-For more information on creating Dashboard Widgets, view:
-http://digwp.com/2010/10/customize-wordpress-dashboard/
-*/
-
-// RSS Dashboard Widget
+ * Add custom RSS widget on Dashboard
+ */
 function msk_rss_dashboard_widget() {
-	if(function_exists('fetch_feed')) {
+	if (function_exists('fetch_feed')) {
 		include_once(ABSPATH . WPINC . '/feed.php');               // include the required file
 		$feed = fetch_feed('http://mosaika.fr/feed/rss/');         // specify the source feed
 		$limit = $feed->get_item_quantity(7);                      // specify number of items
@@ -51,61 +42,45 @@ function msk_rss_dashboard_widget() {
 	<?php }
 }
 
-// calling all custom dashboard widgets
 function msk_custom_dashboard_widgets() {
 	wp_add_dashboard_widget('msk_rss_dashboard_widget', __('Recently on Mosaika.fr blog', 'msk-projector'), 'msk_rss_dashboard_widget');
-	/*
-	Be sure to drop any other created Dashboard Widgets
-	in this function and they will all load.
-	*/
 }
 
-
-// removing the dashboard widgets
 add_action('admin_menu', 'disable_default_dashboard_widgets');
-// adding any custom widgets
 add_action('wp_dashboard_setup', 'msk_custom_dashboard_widgets');
 
 
-/************* CUSTOM LOGIN PAGE *****************/
-
-// calling your own login css so you can style it
-
-//Updated to proper 'enqueue' method
-//http://codex.wordpress.org/Plugin_API/Action_Reference/login_enqueue_scripts
+/*
+ * Custom CSS & HTML on login page
+ */
 function msk_login_css() {
 	wp_enqueue_style( 'msk_login_css', get_template_directory_uri() . '/library/css/login.css', false );
 }
 
-// changing the logo link from wordpress.org to your site
-function msk_login_url() {  return 'http://mosaika.fr/services/themes-wordpress/projector-feedback-wordpress-theme/?utm_source=wp_admin&utm_medium=projector_login&utm_campaign=wp_projector_login'; }
+function msk_login_url() {
+	return 'http://mosaika.fr/services/themes-wordpress/projector-feedback-wordpress-theme/?utm_source=wp_admin&utm_medium=projector_login&utm_campaign=wp_projector_login';
+}
 
-// changing the alt text on the logo to show your site name
-function msk_login_title() { return __('Visit Projector theme website', 'msk-projector'); }
+function msk_login_title() {
+	return __('Visit Projector theme website', 'msk-projector');
+}
 
-// calling it only on the login page
 add_action( 'login_enqueue_scripts', 'msk_login_css', 10 );
 add_filter('login_headerurl', 'msk_login_url');
 add_filter('login_headertitle', 'msk_login_title');
 
 
-/************* CUSTOMIZE ADMIN *******************/
-
 /*
-I don't really recommend editing the admin too much
-as things may get funky if WordPress updates. Here
-are a few funtions which you can choose to use if
-you like.
-*/
-
-// Custom Backend Footer
+ * Customize admin footer
+ */
 function msk_custom_admin_footer() {
 	_e('<em>Projector</em> is a theme developed by <a href="http://mosaika.fr/?utm_source=wp_admin&utm_medium=projector_footer&utm_campaign=wp_projector_footer" target="_blank">Mosaika</a></span>.', 'msk-projector');
 }
-
-// adding it to the admin area
 add_filter('admin_footer_text', 'msk_custom_admin_footer');
 
+/*
+ * Admin custom CSS
+ */
 function msk_admin_custom_css() {
 	$rule = array();
 
@@ -129,6 +104,11 @@ function msk_admin_custom_css() {
 	$rule[] = '#redux-header .display_header span { float:right; position:relative; top:1em; }';
 	$rule[] = '#redux-share a, #redux-sidebar #redux-group-menu li a i { color:#df7f31; }';
 	$rule[] = '#redux-share a:hover { background-color:#df7f31; color:#fff; }';
+
+	$rule[] = '.button-secondary.cuztom-button .dashicons { position:relative; top:.25em; }';
+	$rule[] = '#wip_settings .cuztom-handle-sortable.js-cuztom-handle-sortable { display:none; }';
+	$rule[] = '#wip_settings .cuztom-sortable-item { position:relative; }';
+	$rule[] = '#wip_settings .cuztom .cuztom-remove-sortable { position: absolute; top: 50%; z-index: 9999; margin-top: -8px; right: .45em; }';
 
 	echo '<style type="text/css">' . join(' ', $rule) .'</style>';
 }
@@ -222,4 +202,10 @@ function msk_wip_admin_notices(){
 }
 add_action('admin_notices', 'msk_wip_admin_notices');
 
-?>
+/*
+ * Disable robots crawling option on theme activation
+ */
+function msk_make_site_private() {
+	update_option('blog_public', 0);
+}
+add_action('after_switch_theme', 'msk_make_site_private', 10);

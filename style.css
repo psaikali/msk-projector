@@ -2,8 +2,9 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /*!
 Theme Name:         Projector
-Theme URI:          http://mosaika.fr/themes/projector
-Description:        Easily display your <strong>W</strong>ork <strong>I</strong>n <strong>P</strong>rogress project
+Theme URI:          http://mosaika.fr/services/themes-wordpress/projector-feedback-wordpress-theme/
+Description:        Easily display your <strong>W</strong>ork <strong>I</strong>n <strong>P</strong>rogress design projects to your clients and centralize feedback. Showcase your work in a minimalist yet highly customizable web page, protect it via a password and share it with your clients. Comments authors are notified via e-mail of new feedback messages. New versions of design projects can be easily created. Perfect for graphic and motion designers, web and communication agencies, architects, photographs.
+Tags:               black, blue, editor-style, fluid-layout, full-width-template, gray, green, left sidebar, right sidebar, light, one-column, orange, purple, red, responsive-layout, right sidebar, theme-options, three columns, translation-ready, two columns, white, yellow
 Version:            0.1
 Author:             Pierre SAIKALI
 Author URI:         http://mosaika.fr
@@ -7162,6 +7163,9 @@ SMALL (BASE) SIZE
 body.f-topbar-fixed {
   padding-top: 0;
 }
+body p {
+  font-size: 1em;
+}
 
 .row.row-container {
   overflow: hidden;
@@ -7204,6 +7208,17 @@ body.f-topbar-fixed {
     transform: translate3d(-75%, 0, 0);
   }
 }
+/*
+  If you're not using redirection on non-WIP pages...
+ */
+#undesired-access {
+  text-align: center;
+  margin-top: 4em;
+}
+
+/*
+  The top bar
+ */
 #header-bar {
   border-top: none !important;
   border-left: none !important;
@@ -7212,10 +7227,26 @@ body.f-topbar-fixed {
   padding: .875em 0;
 }
 
+/*
+  Project title in top bar
+ */
 #wip-project-title.has-left-comments, #wip-project-title.has-left-logo {
   padding-left: 4em;
 }
 
+/*
+  Project versions dropdown
+ */
+#versions {
+  margin-top: .5em;
+}
+#versions li.active {
+  font-weight: bold;
+}
+
+/*
+  Comments icon in header + logo, if set
+ */
 #comments-header, #logo {
   border-left: none;
   border-right: none;
@@ -7225,6 +7256,9 @@ body.f-topbar-fixed {
   bottom: 0;
 }
 
+/*
+  Comments icon in header
+ */
 #comments-header {
   padding: 0 1em;
   width: 4em;
@@ -7244,6 +7278,9 @@ body.f-topbar-fixed {
   line-height: 1;
 }
 
+/*
+  Logo
+ */
 #logo {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -7256,6 +7293,25 @@ body.f-topbar-fixed {
   margin-left: 1em;
 }
 
+/*
+  The password form before accessing WIP content
+ */
+#wip-password-form {
+  text-align: center;
+}
+#wip-password-form .fields label {
+  display: none;
+}
+#wip-password-form .fields input {
+  text-align: center;
+}
+#wip-password-form .fields button {
+  margin: 0 auto;
+}
+
+/*
+  The container for the WIP content
+ */
 #content {
   padding: 1em 1em;
 }
@@ -7266,14 +7322,23 @@ body.f-topbar-fixed {
   margin-bottom: 1em;
 }
 
+/*
+  Comments sidebar
+ */
 #comments {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
+/*
+  Comment form
+ */
 #comment-form .fields-group {
-  padding: 1em 1.325em 0 1.325em;
+  padding: 1em 1.325em 1em 1.325em;
 }
 #comment-form .fields-group label {
   font-size: .75em;
@@ -7282,12 +7347,22 @@ body.f-topbar-fixed {
 #comment-form .fields-group #notify-label {
   display: block;
   margin-bottom: 0;
+  line-height: 1.15;
+}
+#comment-form .fields-group #notify-label input {
+  margin-bottom: 0.1em;
 }
 
+/*
+  Comment feedback textarea in form
+ */
 #comment {
   min-height: 10em;
 }
 
+/*
+  Comment form, submit button
+ */
 #comments #submit {
   display: block;
   width: 100%;
@@ -7295,6 +7370,9 @@ body.f-topbar-fixed {
   font-size: 1em;
 }
 
+/*
+  <ul> displaying comments
+ */
 #comments-list {
   margin: 1em 0 1em 0;
   padding: 0 1.325em;
@@ -7324,6 +7402,10 @@ MEDIUM
 @media only screen and (min-width: 40.063em) {
   #content {
     padding: 2em 2em;
+  }
+
+  #wip-password-form {
+    margin-top: 2em;
   }
 }
 /*

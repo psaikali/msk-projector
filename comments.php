@@ -66,9 +66,9 @@
 
 <?php } else {
 	if (comments_open()) { ?>
-
-		<p><?php _e('No comment yet. Use the form above to add the first comment.', 'msk-projector'); ?></p>
-
+		<ul id="comments-list">
+			<li><?php _e('No comment yet. Use the form above to add the first comment.', 'msk-projector'); ?></li>
+		</ul>
 	<?php } ?>
 
 <?php } ?>

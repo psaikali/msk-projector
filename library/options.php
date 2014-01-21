@@ -65,10 +65,17 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 						'desc' => '<h3>' . __('Content', 'msk-projector') . '</h3>',
 					),
 					array(
+						'id' => 'home-content-title',
+						'type' => 'text',
+						'title' => __('Homepage title', 'msk-projector'),
+						'default' => __('Private stuff', 'msk-projector'),
+					),
+					array(
 						'id' => 'home-content',
 						'type' => 'editor',
 						'title' => __('Homepage content', 'msk-projector'),
-						'desc' => __('Content to be displayed if no redirection is defined.', 'msk-projector')
+						'desc' => __('Content to be displayed if no redirection is defined.', 'msk-projector'),
+						'default' => __('<h3>Private access needed.</h3><p>Are you really supposed to be here ?!</p>', 'msk-projector'),
 					),
 				)
 			);
@@ -154,6 +161,15 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 						'default'  => '',
 						'required' => array('wip-appearance-logo', '!=', '')
 					),
+					array(
+						'id' => 'wip-appearance-favicon',
+						'type' => 'media',
+						'url' => true,
+						'title' => __('Favicon', 'msk-projector'),
+						'default'  => array(
+							'url' => get_template_directory_uri() . '/library/images/favicon.png',
+						)
+					),
 				)
 			);
 
@@ -165,6 +181,42 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 				'title' => __('Design', 'msk-projector'),
 				'icon' => 'el-icon-tint',
 				'fields' => array(
+
+					/*
+					 * SUBSECTION PASSWORD FORM
+					 */
+
+					array(
+						'id' => 'design-password-section-title',
+						'type' => 'info',
+						'class' => 'section-title',
+						'desc' => '<h3>' . __('Password form', 'msk-projector') . '</h3>'
+					),
+					array(
+						'id' => 'design-password-btn-bg',
+						'type' => 'link_color',
+						'title' => __('\'Access\' button background color', 'msk-projector'),
+						'desc' => __('This is the <strong>background</strong> color of the \'Access\' button.', 'msk-projector'),
+						'default' => array(
+							'regular' => '#d8d6d3',
+							'hover' => '#56aac2',
+							'active' => '#302d2c',
+						),
+						'compiler' => true
+					),
+					array(
+						'id' => 'design-password-btn-txt',
+						'type' => 'link_color',
+						'title' => __('\'Access\' button text color', 'msk-projector'),
+						'desc' => __('This is the <strong>text</strong> color of the \'Access\' button.', 'msk-projector'),
+						'default' => array(
+							'regular' => '#403e3b',
+							'hover' => '#ffffff',
+							'active' => '#9a9897',
+						),
+						'output' => array('#wip-password-form .fields button'),
+						//'compiler' => true
+					),
 
 					/*
 					 * SUBSECTION BACKGROUNDS
@@ -440,7 +492,7 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 							'font-weight' => '300',
 							'line-height' => '1.3',
 						),
-						'output' => array('.wip-item .desc .heading h3'),
+						'output' => array('#undesired-access h1, #undesired-access h2, #undesired-access h3, #undesired-access h4, #undesired-access h5', '.wip-item .desc .heading h3', '#wip-password-form .wip-password-content h3'),
 						//'compiler' => true
 					),
 					array(
@@ -476,7 +528,7 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 							'font-weight' => '400',
 							'line-height' => '1.3',
 						),
-						'output' => array('.wip-item .desc p', '.wip-item .desc ul', '.wip-item .desc ol', 'body', 'button, .button'),
+						'output' => array('body', '.wip-item .desc p', '.wip-item .desc ul', '.wip-item .desc ol', 'body', 'button, .button', '#wip-password-form .wip-password-content p'),
 						//'compiler' => true
 					),
 
@@ -530,7 +582,7 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 						'id'       => 'advanced-admin-wip-slug',
 						'type'     => 'text',
 						'title'    => __('WIP project slug', 'msk-projector'),
-						'desc'     => sprintf(__('This slug will be displayed in the URL in %1$s/<strong>slug</strong>/wip-project-name. You might need to visit your <a href="%2$s">site Permalinks settings</a> page to refresh WordPress rewrite rules cache.', 'msk-projector'), home_url(), admin_url('options-permalink.php')),
+						'desc'     => sprintf(__('This slug will be displayed in the URL in %1$s/<strong>slug</strong>/wip-project-name. You might need to visit your <a href="%2$1s">site Permalinks settings</a> page to refresh WordPress rewrite rules cache.', 'msk-projector'), home_url(), admin_url('options-permalink.php')),
 						'default'  => 'wip',
 					),
 					array(
@@ -650,8 +702,8 @@ if ( !class_exists( "MSK_Projector_Options" ) ) {
 	            'save_defaults'      	=> true, // On load save the defaults to DB before user clicks save or not
 	            'default_show'       	=> false, // If true, shows the default value next to each field that is not the default value.
 	            'default_mark'       	=> '', // What to print by the field's title if the value shown is default. Suggested: *
-				'intro_text'            => __('<p>Intro This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'msk-projector'),
-				'footer_text'           => __('<p>Footer This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'msk-projector'),
+				'intro_text'            => '<p><small><em>' . sprintf(__('This theme is and will always be free of use. If you like it, <a href="%1$s" target="_blank">be sure to spread the word</a>. For issues or suggestions, please <a href="%2$s" target="_blank">visit our GitHub repo</a>.', 'msk-projector'), 'http://mosaika.fr/services/themes-wordpress/projector-feedback-wordpress-theme/?utm_source=wp_admin&utm_medium=projector_login&utm_campaign=wp_projector_settings', 'https://github.com/psaikali/msk-projector/issues') . '</em></small></p>',
+				'footer_text'           => '<br><p><small><em>' . sprintf(__('This theme is and will always be free of use. If you like it, <a href="%1$s" target="_blank">be sure to spread the word</a>. For issues or suggestions, please <a href="%2$s" target="_blank">visit our GitHub repo</a>.', 'msk-projector'), 'http://mosaika.fr/services/themes-wordpress/projector-feedback-wordpress-theme/?utm_source=wp_admin&utm_medium=projector_login&utm_campaign=wp_projector_settings', 'https://github.com/psaikali/msk-projector/issues') . '</em></small></p>',
 
 
 	            // CAREFUL -> These options are for advanced use only

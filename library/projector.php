@@ -59,23 +59,23 @@ function msk_scripts_and_styles() {
 	global $wp_styles;
 
 	if (!is_admin()) {
-		wp_register_script('joints-modernizr', get_stylesheet_directory_uri() . '/library/js/vendor/custom.modernizr.js', array(), '2.5.3', false);
+		wp_register_script('mskproj-modernizr', get_stylesheet_directory_uri() . '/library/js/vendor/custom.modernizr.js', array(), '2.5.3', false);
 		wp_register_script('foundation-js', get_template_directory_uri() . '/library/js/foundation.min.js', array('jquery'), '', true);
-		wp_register_style('joints-stylesheet', get_stylesheet_directory_uri() . '/style.css', array(), '', 'all');
+		wp_register_style('mskproj-stylesheet', get_stylesheet_directory_uri() . '/style.css', array(), '', 'all');
 		wp_register_style('foundation-icons', get_stylesheet_directory_uri() . '/library/css/icons/foundation-icons.css', array(), '', 'all');
 
 		if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) wp_enqueue_script('comment-reply');
 
-		wp_register_script('joints-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array('jquery'), '', true);
+		wp_register_script('mskproj-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array('jquery'), '', true);
 
-		wp_enqueue_script('joints-modernizr');
+		wp_enqueue_script('mskproj-modernizr');
 		wp_enqueue_script('foundation-js');
-		wp_enqueue_style('joints-stylesheet');
+		wp_enqueue_style('mskproj-stylesheet');
 		wp_enqueue_style('foundation-icons');
 
-		$wp_styles->add_data('joints-ie-only', 'conditional', 'lt IE 9');
+		$wp_styles->add_data('mskproj-ie-only', 'conditional', 'lt IE 9');
 
-		wp_enqueue_script('joints-js');
+		wp_enqueue_script('mskproj-js');
 	}
 }
 
@@ -98,18 +98,22 @@ function msk_filter_ptags_on_images($content) {
 
 
 /*
- * Redirect homepage if setting is enabled
+ * If not single WIP, redirect to home or to URL set in options
  */
-function msk_home_redirect($template) {
-	if (is_front_page() && msk_opt('home-redirect') == 1) {
-		$url = esc_url(msk_opt('home-redirect-url'));
-		wp_redirect($url, 301);
-		exit();
+function msk_global_redirect($template) {
+	if (!is_singular('msk_wip')) {
+		if (msk_opt('home-redirect') == 1) {
+			$url = esc_url(msk_opt('home-redirect-url'));
+			wp_redirect($url);
+			exit();
+		} else {
+			return TEMPLATEPATH . '/index.php';
+		}
+	} else {
+		return $template;
 	}
-
-	return $template;
 }
-add_filter('template_redirect', 'msk_home_redirect', 99);
+add_filter('template_redirect', 'msk_global_redirect', 99);
 
 /*
  * Remove 'Password' from protected posts title
@@ -120,29 +124,18 @@ function msk_remove_password_in_title($title) {
 add_filter('protected_title_format', 'msk_remove_password_in_title');
 
 /*
- * Add extra CSS and HTML
- */
-function msk_extra_head_css_html() {
-	$extra_css = msk_opt('advanced-custom-css');
-	if ($extra_css != '') echo '<style type="text/css">' . $extra_css . '</style>';
-	$extra_html = msk_opt('advanced-custom-head-html');
-	if ($extra_html != '') echo $extra_html;
-}
-add_action('wp_head', 'msk_extra_head_css_html');
-
-/*
  * Take control of the post password box message
  */
 function msk_wip_password_form() {
 	global $post;
 
 	$label = 'pwbox-' . ( empty($post->ID) ? rand() : $post->ID );
-	$output = '<div class="row"><form action="' . esc_url(site_url('wp-login.php?action=postpass', 'login_post')) . '" class="post-password-form small-12 medium-6 large-4 medium-centered large-centered columns" method="post">';
-	$output .= wpautop(msk_opt('wip-password-paragraph'));
+	$output = '<div class="row"><form id="wip-password-form" action="' . esc_url(site_url('wp-login.php?action=postpass', 'login_post')) . '" class="post-password-form small-12 medium-6 large-4 medium-centered large-centered columns" method="post">';
+	$output .= '<div class="wip-password-content">' . wpautop(msk_opt('wip-password-paragraph')) . '</div>';
 	$output .= '<div class="fields">';
 	$output .= '<label for="' . $label . '">' . __('Password') . '</label>';
 	$output .= '<input name="post_password" id="' . $label . '" type="password" required autofocus size="20" />';
-	$output .= '<button type="submit" name="submit"><i class="fi-lock"></i> ' . __( 'Submit' ) . '</button>';
+	$output .= '<button class="submit" type="submit" name="submit"><i class="fi-lock"></i> ' . __( 'Access' ) . '</button>';
 	$output .= '</div>';
 	$output .= '</form></div>';
 
@@ -249,6 +242,7 @@ add_action('wp_head', 'msk_outputs_design_styles');
 function msk_generate_design_styles() {
 	$sidebar_width = msk_opt('wip-appearance-comment-sidebar-width');
 	$project_title_height = msk_opt('design-header-title-font');
+	$access_bg = msk_opt('design-password-btn-bg');
 	$submit_bg = msk_opt('design-comments-btn-bg');
 
 	$css = '';
@@ -260,8 +254,20 @@ function msk_generate_design_styles() {
 	$css .= '.left-off-canvas-menu, .right-off-canvas-menu { width:' . $sidebar_width . '; }';
 	$css .= ".move-right > .inner-wrap {-webkit-transform: translate3d($sidebar_width, 0, 0);-moz-transform: translate3d($sidebar_width, 0, 0);-ms-transform: translate3d($sidebar_width, 0, 0);-o-transform: translate3d($sidebar_width, 0, 0);transform: translate3d($sidebar_width, 0, 0);}.move-left > .inner-wrap {-webkit-transform: translate3d(-$sidebar_width, 0, 0);-moz-transform: translate3d(-$sidebar_width, 0, 0);-ms-transform: translate3d(-$sidebar_width, 0, 0);-o-transform: translate3d(-$sidebar_width, 0, 0);transform: translate3d(-$sidebar_width, 0, 0);}";
 
+	$css .= '#wip-password-form .fields button { background:' . $access_bg['regular'] . '; } #wip-password-form .fields button:hover { background:' . $access_bg['hover'] . '; } #wip-password-form .fields button:active { background:' . $access_bg['active'] . '; }';
 	$css .= '#submit { background:' . $submit_bg['regular'] . '; } #submit:hover { background:' . $submit_bg['hover'] . '; } #submit:active { background:' . $submit_bg['active'] . '; }';
 
 	update_option('msk_projector_generated_css', $css);
 }
 add_action('redux/options/msk_opt/compiler', 'msk_generate_design_styles');
+
+/*
+ * Add extra CSS and HTML
+ */
+function msk_extra_head_css_html() {
+	$extra_css = msk_opt('advanced-custom-css');
+	if ($extra_css != '') echo '<style type="text/css">' . $extra_css . '</style>';
+	$extra_html = msk_opt('advanced-custom-head-html');
+	if ($extra_html != '') echo $extra_html;
+}
+add_action('wp_head', 'msk_extra_head_css_html', 500);

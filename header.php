@@ -15,10 +15,11 @@
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<meta name="robots" content="noindex, nofollow" />
-
-	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png" />
-	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
+	<?php if (msk_opt('wip-appearance-favicon')) {
+		$favicon = msk_opt('wip-appearance-favicon');
+		$favicon_url = $favicon['url'];
+		if ($favicon_url != '') echo '<link rel="icon" href="' . $favicon_url . '" />';
+	} ?>
 
 	<?php wp_head(); ?>
 </head>
