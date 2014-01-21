@@ -7392,6 +7392,13 @@ body p {
 }
 
 /*
+  This is the intro container before WIP content
+ */
+#wip-intro {
+  margin-bottom: 2em;
+}
+
+/*
   Comments sidebar
  */
 #comments {
