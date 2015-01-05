@@ -128,9 +128,11 @@
 
 					<?php echo msk_opt('advanced-custom-before-content'); ?>
 
+					<?php if ($post->post_content != '') { ?>
 					<section id="wip-intro">
 						<?php the_content(); ?>
 					</section>
+					<?php } ?>
 
 					<?php foreach ($wip_items as $j=>$item) { ?>
 
