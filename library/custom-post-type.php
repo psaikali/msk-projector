@@ -12,7 +12,7 @@ function msk_post_types() {
 		'new_item' => sprintf( __( 'New %s' , 'msk-projector' ), __( 'WIP' , 'msk-projector' ) ),
 		'all_items' => sprintf( __( 'All %s' , 'msk-projector' ), __( 'WIPs' , 'msk-projector' ) ),
 		'view_item' => sprintf( __( 'View %s' , 'msk-projector' ), __( 'WIP' , 'msk-projector' ) ),
-		'search_items' => sprintf( __( 'Search %a' , 'msk-projector' ), __( 'Works in Progress' , 'msk-projector' ) ),
+		'search_items' => sprintf( __( 'Search %s' , 'msk-projector' ), __( 'Works in Progress' , 'msk-projector' ) ),
 		'not_found' =>  sprintf( __( 'No %s found' , 'msk-projector' ), __( 'WIP' , 'msk-projector' ) ),
 		'not_found_in_trash' => sprintf( __( 'No %s Found In Trash' , 'msk-projector' ), __( 'WIP' , 'msk-projector' ) ),
 		'parent_item_colon' => '',

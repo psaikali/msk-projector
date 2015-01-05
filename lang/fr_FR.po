@@ -1,0 +1,2213 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Projector\n"
+"POT-Creation-Date: 2015-01-05 18:25+0100\n"
+"PO-Revision-Date: 2015-01-05 18:33+0100\n"
+"Last-Translator: Mosaika.fr <bonjour@mosaika.fr>\n"
+"Language-Team: Pierre SAIKALI <pierre@mosaika.fr>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:23
+msgid "Name"
+msgstr "Nom"
+
+#: ../comments.php:25
+msgid "We need your name."
+msgstr "Nous avons besoin de votre nom."
+
+#: ../comments.php:29
+msgid "E-mail"
+msgstr "E-mail"
+
+#: ../comments.php:31
+msgid "A valid e-mail address is required."
+msgstr "Une adresse e-mail valide est nécessaire."
+
+#: ../comments.php:35 ../comments.php:46
+msgid "Comment"
+msgstr "Commentaire"
+
+#: ../comments.php:36
+msgid "Leave your feedback here..."
+msgstr "Laissez vos commentaires ici..."
+
+#: ../comments.php:37
+msgid "Your feedback is missing !"
+msgstr "Votre retour "
+
+#: ../comments.php:42
+msgid "Notify me of follow-up comments by email."
+msgstr "M'avertir par e-mail des commentaires futurs."
+
+#: ../comments.php:70
+msgid "No comment yet. Use the form above to add the first comment."
+msgstr ""
+"Aucun commentaire pour l'instant. Utilisez le formulaire ci-dessus pour ajouter le "
+"premier commentaire."
+
+#: ../library/admin.php:38
+msgid "The RSS feed is either empty or unavailable."
+msgstr "Le flux RSS est soit vide, soit indisponible."
+
+#: ../library/admin.php:40
+msgid "j F Y @ g:i a"
+msgstr "j F Y @ g:i:a"
+
+#: ../library/admin.php:46
+msgid "Recently on Mosaika.fr blog"
+msgstr "Récemment sur le blog Mosaika"
+
+#: ../library/admin.php:65
+msgid "Visit Projector theme website"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/admin.php:77
+msgid ""
+"<em>Projector</em> is a theme developed by <a href=\"http://mosaika.fr/?"
+"utm_source=wp_admin&utm_medium=projector_footer&utm_campaign=wp_projector_footer\" "
+"target=\"_blank\">Mosaika</a></span>."
+msgstr ""
+"<em>Projector</em> est un thème développé par <a href=\"http://mosaika.fr/?"
+"utm_source=wp_admin&utm_medium=projector_footer&utm_campaign=wp_projector_footer\" "
+"target=\"_blank\">Mosaika</a></span>."
+
+#: ../library/admin.php:122
+msgid "Are you really trying to duplicate a WIP project ?!"
+msgstr "Voulez-vous vraiment dupliquer ce projet WIP ?!"
+
+#: ../library/admin.php:151
+msgid "Error trying to create a new version of this WIP."
+msgstr "Une erreur est apparue lors de la création d'une nouvelle version de ce WIP."
+
+#: ../library/admin.php:200
+#, php-format
+msgid ""
+"A new version of <strong>%s</strong> has been created and you are currently editing it."
+msgstr ""
+"Une nouvelle version <strong>%s</strong> a été créée et vous êtes actuellement en train "
+"de l'éditer."
+
+#: ../library/admin.php:219
+msgid "Mosaika"
+msgstr "Mosaika"
+
+#: ../library/custom-post-type.php:7 ../library/custom-post-type.php:8
+#: ../library/custom-post-type.php:12 ../library/custom-post-type.php:14
+#: ../library/custom-post-type.php:16 ../library/custom-post-type.php:17
+msgid "WIP"
+msgstr "WIP"
+
+#: ../library/custom-post-type.php:9 ../library/inc/cuztom/classes/post_type.class.php:79
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: ../library/custom-post-type.php:10
+#, php-format
+msgid "Add new %s"
+msgstr "Ajouter nouveau %s"
+
+#: ../library/custom-post-type.php:10 ../library/custom-post-type.php:11
+msgid "Work in Progress"
+msgstr "Word in Progress"
+
+#: ../library/custom-post-type.php:11
+#: ../library/inc/cuztom/classes/post_type.class.php:81
+#: ../library/inc/cuztom/classes/taxonomy.class.php:106
+#, php-format
+msgid "Edit %s"
+msgstr "Editer %s"
+
+#: ../library/custom-post-type.php:12
+#: ../library/inc/cuztom/classes/post_type.class.php:82
+#, php-format
+msgid "New %s"
+msgstr "Nouveau %s"
+
+#: ../library/custom-post-type.php:13
+#: ../library/inc/cuztom/classes/post_type.class.php:78
+#: ../library/inc/cuztom/classes/taxonomy.class.php:103
+#, php-format
+msgid "All %s"
+msgstr "Tous les %s"
+
+#: ../library/custom-post-type.php:13
+msgid "WIPs"
+msgstr "WIPs"
+
+#: ../library/custom-post-type.php:14
+#: ../library/inc/cuztom/classes/post_type.class.php:83
+#, php-format
+msgid "View %s"
+msgstr "Voir %s"
+
+#: ../library/custom-post-type.php:15
+#: ../library/inc/cuztom/classes/post_type.class.php:85
+#: ../library/inc/cuztom/classes/taxonomy.class.php:102
+#, php-format
+msgid "Search %s"
+msgstr "Rechercher %s"
+
+#: ../library/custom-post-type.php:15
+msgid "Works in Progress"
+msgstr "Work in Progress"
+
+#: ../library/custom-post-type.php:16
+#: ../library/inc/cuztom/classes/post_type.class.php:86
+#, php-format
+msgid "No %s found"
+msgstr "Aucun %s trouvé"
+
+#: ../library/custom-post-type.php:17
+#, php-format
+msgid "No %s Found In Trash"
+msgstr "Aucun %s dans la corbeille"
+
+#: ../library/custom-post-type.php:19
+msgid "WIP's"
+msgstr "WIPs"
+
+#: ../library/custom-post-type.php:78
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:128
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:187
+msgid "Title"
+msgstr "Titre"
+
+#: ../library/custom-post-type.php:79
+msgid "Define a title here (optional)."
+msgstr "Définissez un titre ici (facultatif)."
+
+#: ../library/custom-post-type.php:84
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: ../library/custom-post-type.php:85
+msgid "You can display a small explanation below the title (optional)."
+msgstr "Vous pouvez afficher une courte explication sous le titre (facultatif)."
+
+#: ../library/custom-post-type.php:90
+msgid "Content data"
+msgstr "Corps du contenu"
+
+#: ../library/custom-post-type.php:91
+msgid "Image or video content"
+msgstr "Contenu visuel"
+
+#: ../library/custom-post-type.php:96
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:129
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:189
+msgid "Description"
+msgstr "Description"
+
+#: ../library/custom-post-type.php:97
+msgid "Describe your image(s) (optional)."
+msgstr "Décrivez vos images (facultatif)."
+
+#: ../library/custom-post-type.php:102
+#, php-format
+msgid "WIP item #%d"
+msgstr "WIP n°%d"
+
+#: ../library/custom-post-type.php:109 ../library/options.php:478
+msgid "WIP project data"
+msgstr "Contenu du WIP"
+
+#: ../library/custom-post-type.php:120
+msgid "Data"
+msgstr "Info"
+
+#: ../library/custom-post-type.php:128
+msgid "Project settings"
+msgstr "Paramètres du projet"
+
+#: ../library/custom-post-type.php:132 ../library/custom-post-type.php:178
+msgid "Version"
+msgstr "Version"
+
+#: ../library/custom-post-type.php:137 ../library/options.php:594
+msgid "E-mails to notify"
+msgstr "E-mails à prévenir"
+
+#: ../library/custom-post-type.php:149
+msgid "Private link"
+msgstr "Lien secret"
+
+#: ../library/custom-post-type.php:152
+msgid "See WIP page"
+msgstr "Voir la page du WIP"
+
+#: ../library/custom-post-type.php:154
+msgid "Please publish this WIP project first."
+msgstr "Veuillez d'abord publier ce WIP."
+
+#: ../library/custom-post-type.php:159
+msgid "Visibility"
+msgstr "Visibilité"
+
+#: ../library/custom-post-type.php:164
+msgid "Not protected"
+msgstr "Non protégé"
+
+#: ../library/custom-post-type.php:164
+msgid "Set a password"
+msgstr "Définir un mot de passe"
+
+#: ../library/custom-post-type.php:166
+msgid "Password protected"
+msgstr "Protégé par mot de passe"
+
+#: ../library/custom-post-type.php:166
+msgid "Modify password"
+msgstr "Modifier le mot de passe"
+
+#: ../library/custom-post-type.php:173
+msgid "Create new version"
+msgstr "Créer une nouvelle version"
+
+#: ../library/custom-post-type.php:178
+msgid "Image #1"
+msgstr "Image #1"
+
+#: ../library/custom-post-type.php:178
+#: ../library/inc/redux/inc/fields/password/field_password.php:55
+#: ../library/projector.php:136
+msgid "Password"
+msgstr "Mot de passe"
+
+#: ../library/custom-post-type.php:206
+msgid "Public"
+msgstr "Public"
+
+#: ../library/custom-post-type.php:225
+msgid "Enter WIP project title here..."
+msgstr "Entrez le titre du projet WIP ici..."
+
+#: ../library/inc/cuztom/classes/cuztom.class.php:157
+msgid "Use of a reserved term."
+msgstr ""
+
+#: ../library/inc/cuztom/classes/field.class.php:163
+msgid "Save"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/bundle.class.php:46
+#: ../library/inc/cuztom/classes/fields/tab.class.php:51
+#: ../library/inc/cuztom/classes/meta.class.php:96
+#: ../library/inc/redux/inc/fields/group/field_group.php:203
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../library/inc/cuztom/classes/fields/bundle.class.php:81
+#: ../library/inc/cuztom/classes/fields/bundle.class.php:134
+#: ../library/inc/cuztom/classes/fields/bundle.class.php:181
+msgid "This input type doesn't support the bundle functionality (yet)."
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/file.class.php:35
+msgid "Select file"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/file.class.php:36
+#: ../library/inc/cuztom/cuztom.php:202
+msgid "Remove current file"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/image.class.php:29
+msgid "Select image"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/image.class.php:30
+#: ../library/inc/cuztom/cuztom.php:201
+msgid "Remove current image"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/yesno.class.php:17
+msgid "Yes"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/fields/yesno.class.php:20
+msgid "No"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/meta/meta_box.class.php:159
+#: ../library/inc/cuztom/classes/taxonomy.class.php:176
+msgid "Date"
+msgstr ""
+
+#: ../library/inc/cuztom/classes/post_type.class.php:75
+#: ../library/inc/cuztom/classes/post_type.class.php:76
+#: ../library/inc/cuztom/classes/post_type.class.php:77
+#: ../library/inc/cuztom/classes/post_type.class.php:96
+#: ../library/inc/cuztom/classes/taxonomy.class.php:100
+#: ../library/inc/cuztom/classes/taxonomy.class.php:101
+#: ../library/inc/cuztom/classes/taxonomy.class.php:110
+#: ../library/inc/cuztom/classes/taxonomy.class.php:118
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../library/inc/cuztom/classes/post_type.class.php:80
+#: ../library/inc/cuztom/classes/taxonomy.class.php:108
+#, php-format
+msgid "Add New %s"
+msgstr "Ajouter nouveau %s"
+
+#: ../library/inc/cuztom/classes/post_type.class.php:84
+#, php-format
+msgid "%s Archive"
+msgstr "Archive des %s"
+
+#: ../library/inc/cuztom/classes/post_type.class.php:87
+#, fuzzy, php-format
+msgid "No %s found in trash"
+msgstr "Ajouter nouveau %s"
+
+#: ../library/inc/cuztom/classes/post_type.class.php:88
+#, fuzzy, php-format
+msgid "%s Parent"
+msgstr "Editer %s"
+
+#: ../library/inc/cuztom/classes/taxonomy.class.php:104
+#, fuzzy, php-format
+msgid "Parent %s"
+msgstr "Editer %s"
+
+#: ../library/inc/cuztom/classes/taxonomy.class.php:105
+#, fuzzy, php-format
+msgid "Parent %s:"
+msgstr "Editer %s"
+
+#: ../library/inc/cuztom/classes/taxonomy.class.php:107
+#, fuzzy, php-format
+msgid "Update %s"
+msgstr "Editer %s"
+
+#: ../library/inc/cuztom/classes/taxonomy.class.php:109
+#, fuzzy, php-format
+msgid "New %s Name"
+msgstr "Ajouter nouveau %s"
+
+#: ../library/inc/cuztom/classes/taxonomy.class.php:233
+#, fuzzy, php-format
+msgid "Show all %s"
+msgstr "Tous les %s"
+
+#: ../library/inc/redux/extensions/customizer/extension_customizer.php:338
+#: ../library/inc/redux/framework.php:1346
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: ../library/inc/redux/extensions/customizer/extension_customizer.php:339
+#: ../library/inc/redux/framework.php:1347
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: ../library/inc/redux/extensions/customizer/extension_customizer.php:340
+#: ../library/inc/redux/framework.php:1349
+msgid ""
+"Your current options will be replaced with the values of this preset. Would you like to "
+"proceed?"
+msgstr ""
+
+#: ../library/inc/redux/extensions/customizer/extension_customizer.php:369
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: ../library/inc/redux/extensions/customizer/extension_customizer.php:370
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: ../library/inc/redux/extensions/customizer/extension_customizer.php:371
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would you like "
+"to proceed?"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/EDD_License_Handler.php:112
+#, php-format
+msgid "%1$s License Key"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/EDD_License_Handler.php:218
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:144
+msgid "Deactivate License"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/EDD_SL_Theme_Updater.php:54
+msgid ""
+"Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' "
+"to update."
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:110
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:118
+#: ../library/inc/redux/extensions/edd/extension_edd.php:170
+msgid "Not Activated"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:114
+#: ../library/inc/redux/extensions/edd/extension_edd.php:173
+msgid "Deactivated"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:116
+#: ../library/inc/redux/extensions/edd/extension_edd.php:77
+#: ../library/inc/redux/extensions/edd/extension_edd.php:119
+#: ../library/inc/redux/extensions/edd/extension_edd.php:176
+msgid "Valid"
+msgstr "Valide"
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:124
+msgid "Verifying license..."
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:125
+msgid "Status"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:134
+msgid "Verify License"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/edd_license/field_edd_license.php:139
+msgid "Activate License"
+msgstr ""
+
+#: ../library/inc/redux/extensions/edd/extension_edd.php:179
+msgid "Not Valid"
+msgstr "Invalide"
+
+#: ../library/inc/redux/framework.php:117 ../library/inc/redux/framework.php:123
+#: ../library/inc/redux/framework.php:295 ../library/inc/redux/framework.php:298
+msgid "Options"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:292
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:292
+msgid "Redux Framework"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:1016 ../library/inc/redux/framework.php:1017
+#: ../library/inc/redux/framework.php:2237
+msgid "Import / Export"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:1028 ../library/inc/redux/framework.php:1029
+#: ../library/inc/redux/framework.php:2253 ../library/inc/redux/framework.php:2368
+msgid "Options Object"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:1040 ../library/inc/redux/framework.php:1041
+#: ../library/inc/redux/framework.php:2267 ../library/inc/redux/framework.php:2388
+msgid "System Info"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:1348
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: ../library/inc/redux/framework.php:1573
+msgid "Default"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2104
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2166
+msgid "Expand"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2168 ../library/inc/redux/framework.php:2438
+msgid "Save Changes"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2170 ../library/inc/redux/framework.php:2440
+msgid "Reset Section"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2172 ../library/inc/redux/framework.php:2442
+#, fuzzy
+msgid "Reset All"
+msgstr "Tous les %s"
+
+#: ../library/inc/redux/framework.php:2175 ../library/inc/redux/framework.php:2445
+msgid "Working..."
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2186
+msgid "Settings Imported!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2192
+msgid "Settings Saved!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2199
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2200
+msgid "error(s) were found!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2201
+msgid "warning(s) were found!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2304
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2305
+msgid "Import Options"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2306
+msgid "Import from file"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2306
+msgid "Import from URL"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2315
+msgid ""
+"Input your backup file below and hit Import to restore your sites options from a backup."
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2329
+msgid ""
+"Input the URL to another sites options set and hit Import to load the options from that "
+"site."
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2340
+msgid "Import"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2340
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with caution!"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2343
+msgid "Export Options"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2349
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as you can use "
+"it as a backup should anything go wrong, or you can use it to restore your settings on "
+"this site (or any other site)."
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2354
+msgid "Copy"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2354
+msgid "Download"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2354
+msgid "Copy Link"
+msgstr ""
+
+#: ../library/inc/redux/framework.php:2377
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:119
+#: ../library/inc/redux/inc/fields/color/field_color.php:72
+#: ../library/inc/redux/inc/fields/color_gradient/field_color_gradient.php:81
+#: ../library/inc/redux/inc/fields/color_gradient/field_color_gradient.php:91
+#: ../library/inc/redux/inc/fields/color_rgba/field_color_rgba.php:84
+msgid "Transparent"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:136
+msgid "Background Repeat"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:152
+msgid "Background Clip"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:168
+msgid "Background Origin"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:183
+msgid "Background Size"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:198
+msgid "Background Attachment"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:218
+msgid "Background Position"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:273
+#: ../library/inc/redux/inc/fields/media/field_media.php:116
+msgid "No media selected"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:307
+#: ../library/inc/redux/inc/fields/media/field_media.php:150
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:117
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:180
+msgid "Upload"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/background/field_background.php:313
+#: ../library/inc/redux/inc/fields/media/field_media.php:156
+#: ../library/inc/redux/inc/fields/multi_text/field_multi_text.php:75
+#: ../library/inc/redux/inc/fields/multi_text/field_multi_text.php:78
+#: ../library/inc/redux/inc/fields/multi_text/field_multi_text.php:81
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:123
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:182
+msgid "Remove"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/border/field_border.php:112
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:125
+#, fuzzy
+msgid "All"
+msgstr "Tous les %s"
+
+#: ../library/inc/redux/inc/fields/border/field_border.php:125
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:149
+msgid "Top"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/border/field_border.php:132
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:156
+#: ../library/options.php:125 ../library/options.php:144
+msgid "Right"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/border/field_border.php:139
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:163
+msgid "Bottom"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/border/field_border.php:146
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:170
+#: ../library/options.php:124 ../library/options.php:143
+msgid "Left"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/border/field_border.php:162
+msgid "Border style"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/color_gradient/field_color_gradient.php:73
+msgid "From "
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/color_gradient/field_color_gradient.php:84
+msgid "To "
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/dimensions/field_dimensions.php:139
+msgid "Width"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/dimensions/field_dimensions.php:155
+msgid "height"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/dimensions/field_dimensions.php:168
+#: ../library/inc/redux/inc/fields/dimensions/field_dimensions.php:169
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:181
+#: ../library/inc/redux/inc/fields/spacing/field_spacing.php:182
+msgid "Units"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/gallery/field_gallery.php:77
+#: ../library/options.ref.php:305
+#, fuzzy
+msgid "Add/Edit Gallery"
+msgstr "Editer %s"
+
+#: ../library/inc/redux/inc/fields/gallery/field_gallery.php:78
+msgid "Clear Gallery"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/group/field_group.php:71
+#, fuzzy
+msgid "New"
+msgstr "Ajouter nouveau %s"
+
+#: ../library/inc/redux/inc/fields/group/field_group.php:84
+#, fuzzy
+msgid "New "
+msgstr "Nouveau %s"
+
+#: ../library/inc/redux/inc/fields/group/field_group.php:133
+#: ../library/inc/redux/inc/fields/group/field_group.php:198
+msgid "Delete"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/link_color/field_link_color.php:86
+msgid "Regular"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/link_color/field_link_color.php:90
+msgid "Hover"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/link_color/field_link_color.php:94
+msgid "Visited"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/link_color/field_link_color.php:98
+msgid "Active"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/multi_text/field_multi_text.php:65
+#, fuzzy
+msgid "Add More"
+msgstr "Ajouter nouveau"
+
+#: ../library/inc/redux/inc/fields/password/field_password.php:56
+msgid "Username"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/select/field_select.php:69
+#: ../library/inc/redux/inc/fields/select_image/field_select_image.php:59
+msgid "Select an item"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/select/field_select.php:110
+#: ../library/inc/redux/inc/fields/select_image/field_select_image.php:134
+msgid "No items of this type were found."
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:130
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:191
+msgid "URL"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:138
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:200
+msgid "Select an Option"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:158
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:220
+msgid "Delete Slide"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/slides/field_slides.php:223
+#, fuzzy
+msgid "Add Slide"
+msgstr "Ajouter nouveau"
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:122
+msgid "Font family"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:163
+msgid "Standard Fonts"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:199
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:203
+msgid "Font style"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:203
+msgid "Style"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:229
+msgid "Font subsets"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:230
+msgid "Subsets"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:230
+msgid "Font script"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:248
+msgid "Size"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:257
+msgid "Height"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:265
+msgid "Word Spacing"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:273
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:287
+msgid "Backup Font Family"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:307
+msgid "Font color"
+msgstr ""
+
+#: ../library/inc/redux/inc/fields/typography/field_typography.php:582
+msgid "Google Webfonts"
+msgstr ""
+
+#: ../library/inc/redux/inc/tracking.php:59
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: ../library/inc/redux/inc/tracking.php:60
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage stats so we "
+"know which configurations, plugins and themes to test with."
+msgstr ""
+
+#: ../library/inc/redux/inc/tracking.php:65
+msgid "Allow tracking"
+msgstr ""
+
+#: ../library/inc/redux/inc/tracking.php:70
+msgid "Do not allow tracking"
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/color/validation_color.php:15
+#: ../library/inc/redux/inc/validation/color_rgba/validation_color_rgba.php:15
+#: ../library/inc/redux/inc/validation/colorrgba/validation_colorrgba.php:15
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/comma_numeric/validation_comma_numeric.php:15
+msgid "You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/date/validation_date.php:15
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/email/validation_email.php:15
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/no_html/validation_no_html.php:15
+msgid "You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/no_special_chars/validation_no_special_chars.php:15
+msgid ""
+"You must not enter any special characters in this field, all special characters have "
+"been removed."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/numeric/validation_numeric.php:15
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../library/inc/redux/inc/validation/url/validation_url.php:15
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../library/options.php:37
+msgid "Homepage"
+msgstr "Page d'accueil"
+
+#: ../library/options.php:44
+msgid "Redirection"
+msgstr "Redirection"
+
+#: ../library/options.php:49
+msgid "Activate 301 redirection on homepage"
+msgstr "Activer la redirection 301 sur la page d'accueil"
+
+#: ../library/options.php:50
+msgid "To disable public access to the homepage, enable this option."
+msgstr "Pour empêcher l'accès public à la page d'accueil, activez cette option."
+
+#: ../library/options.php:56
+msgid "Redirection URL"
+msgstr "Adresse de redirection"
+
+#: ../library/options.php:65
+msgid "Content"
+msgstr "Contenu"
+
+#: ../library/options.php:70
+msgid "Homepage title"
+msgstr "Titre de la page d'accueil"
+
+#: ../library/options.php:71
+msgid "Private stuff"
+msgstr "Des trucs secrets !"
+
+#: ../library/options.php:76
+msgid "Homepage content"
+msgstr "Contenu de la page d'accueil"
+
+#: ../library/options.php:77
+msgid "Content to be displayed if no redirection is defined."
+msgstr "Contenu affiché si aucune redirection n'est définie."
+
+#: ../library/options.php:78
+msgid "<h3>Private access needed.</h3><p>Are you really supposed to be here ?!</p>"
+msgstr "<h3>Accès privé.</h3> <p>Êtes-vous sûr d'être au bon endroit ?!</p>"
+
+#: ../library/options.php:88
+#, fuzzy
+msgid "WIP projects"
+msgstr "WIP"
+
+#: ../library/options.php:99
+msgid "Password form content"
+msgstr "Contenu du formulaire de mot de passe"
+
+#: ../library/options.php:104
+msgid "Text displayed before the password field."
+msgstr "Texte affiché avant le champ de mot de passe."
+
+#: ../library/options.php:105
+msgid ""
+"This page is password-protected. Please enter the password below to see its content."
+msgstr ""
+"Cette page est protégée par un mot de passe. Veuillez entrer le mot de passe ci-dessus "
+"pour voir son contenu."
+
+#: ../library/options.php:116
+msgid "WIP project appearance"
+msgstr "Apparence d'un projet WIP"
+
+#: ../library/options.php:121
+msgid "Comments sidebar position"
+msgstr "Position de la sidebar des commentaires"
+
+#: ../library/options.php:122
+msgid "Display the sidebar on the left or right handside of the page."
+msgstr ""
+
+#: ../library/options.php:132
+msgid "Comments sidebar width"
+msgstr ""
+
+#: ../library/options.php:133
+msgid "Don't forget to set the unit too, like <em>px</em> or <em>%</em>."
+msgstr ""
+
+#: ../library/options.php:140
+msgid "Item description position"
+msgstr ""
+
+#: ../library/options.php:141
+msgid "Display the description text to the left or right handside of each item data."
+msgstr ""
+
+#: ../library/options.php:152
+msgid "Logo"
+msgstr ""
+
+#: ../library/options.php:154
+msgid "A small logo can be displayed in the right part of the header bar."
+msgstr ""
+
+#: ../library/options.php:159
+msgid "Logo URL"
+msgstr ""
+
+#: ../library/options.php:160
+msgid ""
+"A link can be assigned to the logo, redirecting the user to your main website for "
+"example."
+msgstr ""
+
+#: ../library/options.php:168
+msgid "Favicon"
+msgstr ""
+
+#: ../library/options.php:181
+msgid "Design"
+msgstr ""
+
+#: ../library/options.php:193
+msgid "Password form"
+msgstr ""
+
+#: ../library/options.php:198
+msgid "'Access' button background color"
+msgstr ""
+
+#: ../library/options.php:199
+msgid "This is the <strong>background</strong> color of the 'Access' button."
+msgstr ""
+
+#: ../library/options.php:210
+msgid "'Access' button text color"
+msgstr ""
+
+#: ../library/options.php:211
+msgid "This is the <strong>text</strong> color of the 'Access' button."
+msgstr ""
+
+#: ../library/options.php:229
+msgid "Backgrounds"
+msgstr ""
+
+#: ../library/options.php:234
+msgid "Page background"
+msgstr ""
+
+#: ../library/options.php:244
+msgid "Comments sidebar background"
+msgstr ""
+
+#: ../library/options.php:254
+msgid "Header background"
+msgstr ""
+
+#: ../library/options.php:264
+msgid "Comments header background"
+msgstr ""
+
+#: ../library/options.php:274
+#, fuzzy
+msgid "Comment form background"
+msgstr "Commentaire"
+
+#: ../library/options.php:290
+msgid "Header bar"
+msgstr ""
+
+#: ../library/options.php:295
+msgid "Project title font"
+msgstr ""
+
+#: ../library/options.php:296
+msgid "Specify the title font properties."
+msgstr ""
+
+#: ../library/options.php:314
+msgid "Project version font"
+msgstr ""
+
+#: ../library/options.php:315
+msgid "The version font is displayed just after the project title."
+msgstr ""
+
+#: ../library/options.php:333
+msgid "Header border"
+msgstr ""
+
+#: ../library/options.php:334
+msgid "You can display a border at the bottom of the header bar."
+msgstr ""
+
+#: ../library/options.php:335
+msgid ""
+"Tip : for a nice visual effect, you can set the same color as the comments header "
+"background color defined below."
+msgstr ""
+
+#: ../library/options.php:352
+msgid "Comments header icon color"
+msgstr ""
+
+#: ../library/options.php:371
+msgid "Comments sidebar"
+msgstr ""
+
+#: ../library/options.php:376
+#, fuzzy
+msgid "Comment author font"
+msgstr "Commentaire"
+
+#: ../library/options.php:394
+#, fuzzy
+msgid "Comment content font"
+msgstr "Commentaire"
+
+#: ../library/options.php:412
+msgid "Comment meta data font"
+msgstr ""
+
+#: ../library/options.php:430
+#, fuzzy
+msgid "Comment divider"
+msgstr "Commentaire"
+
+#: ../library/options.php:447
+msgid "'Add comment' background color"
+msgstr ""
+
+#: ../library/options.php:448
+msgid "This is the <strong>background</strong> color of the 'Add comment' button."
+msgstr ""
+
+#: ../library/options.php:459
+msgid "'Add comment' text color"
+msgstr ""
+
+#: ../library/options.php:460
+msgid "This is the <strong>text</strong> color of the 'Add comment' button."
+msgstr ""
+
+#: ../library/options.php:483
+msgid "Description title font"
+msgstr ""
+
+#: ../library/options.php:501
+msgid "Description subtitle font"
+msgstr ""
+
+#: ../library/options.php:519
+msgid "Description content font"
+msgstr ""
+
+#: ../library/options.php:548
+msgid "Advanced settings"
+msgstr ""
+
+#: ../library/options.php:560
+#, fuzzy
+msgid "WIP administration page"
+msgstr "WIP"
+
+#: ../library/options.php:565
+msgid "Max number of WIP items"
+msgstr ""
+
+#: ../library/options.php:566
+msgid "What is the maximum of WIP items blocks you'd like to see on edit pages ?"
+msgstr ""
+
+#: ../library/options.php:573
+msgid "WIP items admin style"
+msgstr ""
+
+#: ../library/options.php:574
+msgid ""
+"If you need more than 8 WIP items in the back-end, you might want to display them as "
+"accordion before the tabs layout break."
+msgstr ""
+
+#: ../library/options.php:577
+msgid "Tabs"
+msgstr ""
+
+#: ../library/options.php:578
+msgid "Accordions"
+msgstr ""
+
+#: ../library/options.php:584
+msgid "WIP project slug"
+msgstr ""
+
+#: ../library/options.php:585
+#, php-format
+msgid ""
+"This slug will be displayed in the URL in %1$s/<strong>slug</strong>/wip-project-name. "
+"You might need to visit your <a href=\"%2$1s\">site Permalinks settings</a> page to "
+"refresh WordPress rewrite rules cache."
+msgstr ""
+
+#: ../library/options.php:591
+#, fuzzy
+msgid "New version data duplication"
+msgstr "Une erreur est apparue lors de la création d'une nouvelle version de ce WIP."
+
+#: ../library/options.php:592
+msgid ""
+"Decide which content should be duplicated every time you create a new version of a WIP."
+msgstr ""
+
+#: ../library/options.php:595
+msgid "Intro content"
+msgstr ""
+
+#: ../library/options.php:596
+msgid "Every WIP item contents"
+msgstr ""
+
+#: ../library/options.php:613
+msgid "Custom HTML &amp; CSS"
+msgstr ""
+
+#: ../library/options.php:618
+msgid "Extra CSS code"
+msgstr ""
+
+#: ../library/options.php:619
+msgid "Paste your CSS code here to customize the theme."
+msgstr ""
+
+#: ../library/options.php:627
+msgid "Extra &lt;head&gt; HTML code"
+msgstr ""
+
+#: ../library/options.php:628
+msgid "Paste your HTML code here, it'll be loaded in the header of your site."
+msgstr ""
+
+#: ../library/options.php:629
+msgid "That's a good place to put your Google Analytics tracking code, for example."
+msgstr ""
+
+#: ../library/options.php:637
+msgid "Content before project data"
+msgstr ""
+
+#: ../library/options.php:638
+msgid "Content to be displayed before the WIP project data. HTML is allowed."
+msgstr ""
+
+#: ../library/options.php:643
+msgid "Content after project data"
+msgstr ""
+
+#: ../library/options.php:644
+msgid "Content to be displayed after the WIP project data. HTML is allowed."
+msgstr ""
+
+#: ../library/options.php:649
+#, fuzzy
+msgid "E-mail subject title"
+msgstr "Une adresse e-mail valide est nécessaire."
+
+#: ../library/options.php:650
+msgid "The title used for new comments notification."
+msgstr ""
+
+#: ../library/options.php:651
+msgid "New comment on {{project_title}}"
+msgstr ""
+
+#: ../library/options.php:652
+msgid ""
+"You can use variables in there, like : <ul><li><em>{{project_title}}</em> for the WIP "
+"project title</li> <li><em>{{comment_author}}</em> for the new comment author name</"
+"li></ul>"
+msgstr ""
+
+#: ../library/options.php:657
+#, fuzzy
+msgid "E-mail body template"
+msgstr "Une adresse e-mail valide est nécessaire."
+
+#: ../library/options.php:658
+msgid "The e-mail template used for new comments notification."
+msgstr ""
+
+#: ../library/options.php:661
+msgid ""
+"<h2>New comment on {{project_title}} <small><em>(version {{project_version}})</em></"
+"small></h2><p><strong>{{comment_author}}</strong> said :</"
+"p><blockquote>{{comment_content}}</blockquote><p><a href=\"{{project_url}}\">See "
+"project &raquo;</a></p>"
+msgstr ""
+
+#: ../library/options.php:662
+msgid ""
+"You can use variables in there, like : <ul><li><em>{{project_title}}</em> for the WIP "
+"project title</li> <li><em>{{project_version}}</em> for the WIP project version</li> "
+"<li><em>{{project_url}}</em> for the link to the WIP project</li> "
+"<li><em>{{project_password}}</em> for the WIP project password</li> "
+"<li><em>{{comment_author}}</em> for the new comment author name</li> "
+"<li><em>{{comment_content}}</em> for the new comment content</li> "
+"<li><em>{{comment_date}}</em> for the date of the new comment</li></ul>"
+msgstr ""
+
+#: ../library/options.php:687
+#, fuzzy
+msgid "Projector"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.php:688 ../library/options.ref.php:1418
+#: ../library/options.ref.php:1419
+#, fuzzy
+msgid "Projector settings"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.php:705 ../library/options.php:706
+#, php-format
+msgid ""
+"This theme is and will always be free of use. If you like it, <a href=\"%1$s\" target="
+"\"_blank\">be sure to spread the word</a>. For issues or suggestions, please <a href="
+"\"%2$s\" target=\"_blank\">visit our GitHub repo</a>."
+msgstr ""
+
+#: ../library/options.php:725
+#, fuzzy
+msgid "Visit Porjector theme website"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.php:730
+msgid "Follow us on Google Plus"
+msgstr ""
+
+#: ../library/options.php:735
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../library/options.php:740
+msgid "Follow us on Facebook"
+msgstr ""
+
+#: ../library/options.php:745
+msgid "Join Mosaika's professional network on Linkedin"
+msgstr ""
+
+#: ../library/options.php:750
+msgid "Join Mosaika's professional network on Viadeo"
+msgstr ""
+
+#: ../library/options.php:755
+msgid "See our premium goodies on Creative Market"
+msgstr ""
+
+#: ../library/options.ref.php:106
+msgid "Section via hook"
+msgstr ""
+
+#: ../library/options.ref.php:107
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the sections "
+"array. Can be used by child themes to add/remove sections from the options.</p>"
+msgstr ""
+
+#: ../library/options.ref.php:194
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: ../library/options.ref.php:213
+#, fuzzy, php-format
+msgid "By %s"
+msgstr "Nouveau %s"
+
+#: ../library/options.ref.php:214
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../library/options.ref.php:215
+msgid "Tags"
+msgstr ""
+
+#: ../library/options.ref.php:219
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: ../library/options.ref.php:220
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: ../library/options.ref.php:250
+msgid "Home Settings"
+msgstr ""
+
+#: ../library/options.ref.php:251
+msgid ""
+"Redux Framework was created with the developer in mind. It allows for any theme "
+"developer to have an advanced theme panel with most of the features a developer would "
+"need. For more information check out the Github repo at: <a href=\"https://github.com/"
+"ReduxFramework/Redux-Framework\">https://github.com/ReduxFramework/Redux-Framework</a>"
+msgstr ""
+
+#: ../library/options.ref.php:258
+msgid "Web Fonts"
+msgstr ""
+
+#: ../library/options.ref.php:261 ../library/options.ref.php:278
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
+
+#: ../library/options.ref.php:262 ../library/options.ref.php:279
+#: ../library/options.ref.php:292 ../library/options.ref.php:300
+msgid "Upload any media using the WordPress native uploader"
+msgstr ""
+
+#: ../library/options.ref.php:267
+msgid "Media Options"
+msgstr ""
+
+#: ../library/options.ref.php:268
+msgid "With the \"section\" field you can create indent option sections."
+msgstr ""
+
+#: ../library/options.ref.php:275
+msgid "Media w/ URL"
+msgstr ""
+
+#: ../library/options.ref.php:290
+msgid "Media w/o URL"
+msgstr ""
+
+#: ../library/options.ref.php:291 ../library/options.ref.php:299
+msgid ""
+"This represents the minimalistic view. It does not have the preview box or the display "
+"URL in an input box. "
+msgstr ""
+
+#: ../library/options.ref.php:298
+msgid "Media No Preview"
+msgstr ""
+
+#: ../library/options.ref.php:306
+msgid ""
+"Create a new Gallery by selecting existing or uploading new images using the WordPress "
+"native uploader"
+msgstr ""
+
+#: ../library/options.ref.php:307 ../library/options.ref.php:690
+#: ../library/options.ref.php:698 ../library/options.ref.php:715
+#: ../library/options.ref.php:795 ../library/options.ref.php:805
+#: ../library/options.ref.php:816 ../library/options.ref.php:823
+#: ../library/options.ref.php:832 ../library/options.ref.php:842
+#: ../library/options.ref.php:852 ../library/options.ref.php:871
+#: ../library/options.ref.php:881 ../library/options.ref.php:890
+#: ../library/options.ref.php:899 ../library/options.ref.php:908
+#: ../library/options.ref.php:918 ../library/options.ref.php:934
+#: ../library/options.ref.php:942 ../library/options.ref.php:951
+#: ../library/options.ref.php:959 ../library/options.ref.php:967
+#: ../library/options.ref.php:976 ../library/options.ref.php:984
+#: ../library/options.ref.php:1014 ../library/options.ref.php:1027
+#: ../library/options.ref.php:1046 ../library/options.ref.php:1056
+#: ../library/options.ref.php:1086 ../library/options.ref.php:1095
+#: ../library/options.ref.php:1103 ../library/options.ref.php:1112
+#: ../library/options.ref.php:1120 ../library/options.ref.php:1129
+#: ../library/options.ref.php:1137 ../library/options.ref.php:1146
+#: ../library/options.ref.php:1154 ../library/options.ref.php:1163
+#: ../library/options.ref.php:1173 ../library/options.ref.php:1181
+#: ../library/options.ref.php:1190 ../library/options.ref.php:1198
+#: ../library/options.ref.php:1207 ../library/options.ref.php:1263
+#: ../library/options.ref.php:1274
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: ../library/options.ref.php:312
+msgid "JQuery UI Slider Example 1"
+msgstr ""
+
+#: ../library/options.ref.php:313
+msgid "JQuery UI slider description. Min: 1, max: 500, step: 3, default value: 45"
+msgstr ""
+
+#: ../library/options.ref.php:323
+msgid "JQuery UI Slider Example 2 w/ Steps (5)"
+msgstr ""
+
+#: ../library/options.ref.php:324
+msgid "JQuery UI slider description. Min: 0, max: 300, step: 5, default value: 75"
+msgstr ""
+
+#: ../library/options.ref.php:333
+msgid "JQuery UI Spinner Example 1"
+msgstr ""
+
+#: ../library/options.ref.php:334
+msgid "JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40"
+msgstr ""
+
+#: ../library/options.ref.php:343
+msgid "Switch On"
+msgstr ""
+
+#: ../library/options.ref.php:344 ../library/options.ref.php:352
+#: ../library/options.ref.php:1326
+msgid "Look, it's on!"
+msgstr ""
+
+#: ../library/options.ref.php:351
+msgid "Switch Off"
+msgstr ""
+
+#: ../library/options.ref.php:359
+msgid "Switch - Custom Titles"
+msgstr ""
+
+#: ../library/options.ref.php:360
+msgid "Look, it's on! Also hidden child elements!"
+msgstr ""
+
+#: ../library/options.ref.php:370
+msgid "Switch - With Hidden Items (NESTED!)"
+msgstr ""
+
+#: ../library/options.ref.php:371
+msgid "Also called a \"fold\" parent."
+msgstr ""
+
+#: ../library/options.ref.php:372
+msgid ""
+"Items set with a fold to this ID will hide unless this is set to the appropriate value."
+msgstr ""
+
+#: ../library/options.ref.php:380
+msgid "Images Option (with pattern=>true)"
+msgstr ""
+
+#: ../library/options.ref.php:381
+msgid "Select a background pattern."
+msgstr ""
+
+#: ../library/options.ref.php:435 ../library/options.ref.php:442
+msgid "Slides Options"
+msgstr ""
+
+#: ../library/options.ref.php:436 ../library/options.ref.php:443
+msgid "Unlimited slides with drag and drop sortings."
+msgstr ""
+
+#: ../library/options.ref.php:437 ../library/options.ref.php:513
+msgid ""
+"This field will store all slides values into a multidimensional array to use into a "
+"foreach loop."
+msgstr ""
+
+#: ../library/options.ref.php:519
+msgid "Preset"
+msgstr ""
+
+#: ../library/options.ref.php:520 ../library/options.ref.php:522
+msgid ""
+"This allows you to set a json string or array to override multiple preferences in your "
+"theme."
+msgstr ""
+
+#: ../library/options.ref.php:531
+msgid "Typography"
+msgstr ""
+
+#: ../library/options.ref.php:547
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: ../library/options.ref.php:569
+msgid "General Settings"
+msgstr ""
+
+#: ../library/options.ref.php:575
+msgid "Main Layout"
+msgstr ""
+
+#: ../library/options.ref.php:576
+msgid "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout."
+msgstr ""
+
+#: ../library/options.ref.php:592
+msgid "Tracking Code"
+msgstr ""
+
+#: ../library/options.ref.php:593
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be added into the "
+"footer template of your theme."
+msgstr ""
+
+#: ../library/options.ref.php:601
+msgid "CSS Code"
+msgstr ""
+
+#: ../library/options.ref.php:602
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: ../library/options.ref.php:611
+msgid "JS Code"
+msgstr ""
+
+#: ../library/options.ref.php:612
+msgid "Paste your JS code here."
+msgstr ""
+
+#: ../library/options.ref.php:622
+msgid "Footer Text"
+msgstr ""
+
+#: ../library/options.ref.php:623
+msgid ""
+"You can use the following shortcodes in your footer text: [wp-url] [site-url] [theme-"
+"url] [login-url] [logout-url] [site-title] [site-tagline] [current-year]"
+msgstr ""
+
+#: ../library/options.ref.php:641
+msgid "Styling Options"
+msgstr ""
+
+#: ../library/options.ref.php:646
+#, fuzzy
+msgid "Theme Stylesheet"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.ref.php:647 ../library/options.ref.php:1340
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: ../library/options.ref.php:655
+msgid "Body Background Color"
+msgstr ""
+
+#: ../library/options.ref.php:656
+msgid "Pick a background color for the theme (default: #fff)."
+msgstr ""
+
+#: ../library/options.ref.php:664
+msgid "Body Background"
+msgstr ""
+
+#: ../library/options.ref.php:665
+msgid "Body background with image, color, etc."
+msgstr ""
+
+#: ../library/options.ref.php:672
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../library/options.ref.php:673
+msgid "Pick a background color for the footer (default: #dd9933)."
+msgstr ""
+
+#: ../library/options.ref.php:680
+msgid "Color RGBA - BETA"
+msgstr ""
+
+#: ../library/options.ref.php:681
+msgid "Gives you the RGBA color. Still quite experimental. Use at your own risk."
+msgstr ""
+
+#: ../library/options.ref.php:688
+msgid "Header Gradient Color Option"
+msgstr ""
+
+#: ../library/options.ref.php:689 ../library/options.ref.php:697
+#: ../library/options.ref.php:713
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: ../library/options.ref.php:696
+msgid "Links Color Option"
+msgstr ""
+
+#: ../library/options.ref.php:712
+msgid "Header Border Option"
+msgstr ""
+
+#: ../library/options.ref.php:731
+msgid "Padding/Margin Option"
+msgstr ""
+
+#: ../library/options.ref.php:732
+msgid "Allow your users to choose the spacing or margin they want."
+msgstr ""
+
+#: ../library/options.ref.php:733
+msgid ""
+"You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units."
+msgstr ""
+
+#: ../library/options.ref.php:741
+msgid "Dimensions (Width/Height) Option"
+msgstr ""
+
+#: ../library/options.ref.php:742
+msgid "Allow your users to choose width, height, and/or unit."
+msgstr ""
+
+#: ../library/options.ref.php:743
+msgid "You can enable or disable any piece of this field. Width, Height, or Units."
+msgstr ""
+
+#: ../library/options.ref.php:749
+msgid "Body Font"
+msgstr ""
+
+#: ../library/options.ref.php:750
+msgid "Specify the body font properties."
+msgstr ""
+
+#: ../library/options.ref.php:762
+msgid "Custom CSS"
+msgstr ""
+
+#: ../library/options.ref.php:763
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../library/options.ref.php:764
+msgid "This field is even CSS validated!"
+msgstr ""
+
+#: ../library/options.ref.php:770
+msgid "Custom HTML"
+msgstr ""
+
+#: ../library/options.ref.php:771
+msgid "Just like a text box widget."
+msgstr ""
+
+#: ../library/options.ref.php:772
+msgid "This field is even HTML validated!"
+msgstr ""
+
+#: ../library/options.ref.php:786
+msgid "Field Validation"
+msgstr ""
+
+#: ../library/options.ref.php:787
+msgid "Validate ALL fields within Redux."
+msgstr ""
+
+#: ../library/options.ref.php:788
+msgid "<p class=\"description\">This is the Description. Again HTML is allowed2</p>"
+msgstr ""
+
+#: ../library/options.ref.php:793
+msgid "Text Option - Email Validated"
+msgstr ""
+
+#: ../library/options.ref.php:794
+msgid ""
+"This is a little space under the Field Title in the Options table, additional info is "
+"good in here."
+msgstr ""
+
+#: ../library/options.ref.php:803
+msgid "Text Option with Data Attributes"
+msgstr ""
+
+#: ../library/options.ref.php:804
+msgid ""
+"You can also pass an options array if you want. Set the default to whatever you like."
+msgstr ""
+
+#: ../library/options.ref.php:813
+msgid "Multi Text Option - Color Validated"
+msgstr ""
+
+#: ../library/options.ref.php:815
+msgid ""
+"If you enter an invalid color it will be removed. Try using the text \"blue\" as a "
+"color.  ;)"
+msgstr ""
+
+#: ../library/options.ref.php:821
+msgid "Text Option - URL Validated"
+msgstr ""
+
+#: ../library/options.ref.php:822
+msgid "This must be a URL."
+msgstr ""
+
+#: ../library/options.ref.php:830
+msgid "Text Option - Numeric Validated"
+msgstr ""
+
+#: ../library/options.ref.php:831
+msgid "This must be numeric."
+msgstr ""
+
+#: ../library/options.ref.php:840
+msgid "Text Option - Comma Numeric Validated"
+msgstr ""
+
+#: ../library/options.ref.php:841
+msgid "This must be a comma separated string of numerical values."
+msgstr ""
+
+#: ../library/options.ref.php:850
+msgid "Text Option - No Special Chars Validated"
+msgstr ""
+
+#: ../library/options.ref.php:851
+msgid "This must be a alpha numeric only."
+msgstr ""
+
+#: ../library/options.ref.php:859
+msgid "Text Option - Str Replace Validated"
+msgstr ""
+
+#: ../library/options.ref.php:860 ../library/options.ref.php:870
+#: ../library/options.ref.php:880
+msgid "You decide."
+msgstr ""
+
+#: ../library/options.ref.php:861
+msgid "This field's default value was changed by a filter hook!"
+msgstr ""
+
+#: ../library/options.ref.php:869
+msgid "Text Option - Preg Replace Validated"
+msgstr ""
+
+#: ../library/options.ref.php:879
+msgid "Text Option - Custom Callback Validated"
+msgstr ""
+
+#: ../library/options.ref.php:888
+msgid "Textarea Option - No HTML Validated"
+msgstr ""
+
+#: ../library/options.ref.php:889
+#, fuzzy
+msgid "All HTML will be stripped"
+msgstr "Tous les %s"
+
+#: ../library/options.ref.php:897
+msgid "Textarea Option - HTML Validated"
+msgstr ""
+
+#: ../library/options.ref.php:898
+msgid "HTML Allowed (wp_kses)"
+msgstr ""
+
+#: ../library/options.ref.php:906
+msgid "Textarea Option - HTML Validated Custom"
+msgstr ""
+
+#: ../library/options.ref.php:907
+msgid "Custom HTML Allowed (wp_kses)"
+msgstr ""
+
+#: ../library/options.ref.php:916
+msgid "Textarea Option - JS Validated"
+msgstr ""
+
+#: ../library/options.ref.php:917
+msgid "JS will be escaped"
+msgstr ""
+
+#: ../library/options.ref.php:926
+msgid "Radio/Checkbox Fields"
+msgstr ""
+
+#: ../library/options.ref.php:927 ../library/options.ref.php:1039
+#: ../library/options.ref.php:1255 ../library/options.ref.php:1358
+msgid "<p class=\"description\">This is the Description. Again HTML is allowed</p>"
+msgstr ""
+
+#: ../library/options.ref.php:932
+msgid "Checkbox Option"
+msgstr ""
+
+#: ../library/options.ref.php:933 ../library/options.ref.php:941
+#: ../library/options.ref.php:950 ../library/options.ref.php:958
+#: ../library/options.ref.php:966 ../library/options.ref.php:975
+#: ../library/options.ref.php:983 ../library/options.ref.php:997
+#: ../library/options.ref.php:1045 ../library/options.ref.php:1055
+#: ../library/options.ref.php:1085 ../library/options.ref.php:1094
+#: ../library/options.ref.php:1102 ../library/options.ref.php:1111
+#: ../library/options.ref.php:1119 ../library/options.ref.php:1128
+#: ../library/options.ref.php:1136 ../library/options.ref.php:1145
+#: ../library/options.ref.php:1153 ../library/options.ref.php:1162
+#: ../library/options.ref.php:1180 ../library/options.ref.php:1189
+#: ../library/options.ref.php:1197 ../library/options.ref.php:1206
+#: ../library/options.ref.php:1214 ../library/options.ref.php:1262
+#: ../library/options.ref.php:1273
+msgid "No validation can be done on this field type"
+msgstr ""
+
+#: ../library/options.ref.php:940
+msgid "Multi Checkbox Option"
+msgstr ""
+
+#: ../library/options.ref.php:949 ../library/options.ref.php:974
+msgid "Multi Checkbox Option (with menu data)"
+msgstr ""
+
+#: ../library/options.ref.php:957
+msgid "Multi Checkbox Option (with sidebar data)"
+msgstr ""
+
+#: ../library/options.ref.php:965
+msgid "Radio Option"
+msgstr ""
+
+#: ../library/options.ref.php:982
+msgid "Images Option"
+msgstr ""
+
+#: ../library/options.ref.php:996
+msgid "Images Option for Layout"
+msgstr ""
+
+#: ../library/options.ref.php:998
+msgid "This uses some of the built in images, you can use them for layout options."
+msgstr ""
+
+#: ../library/options.ref.php:1012 ../library/options.ref.php:1025
+msgid "Sortable Text Option"
+msgstr ""
+
+#: ../library/options.ref.php:1013 ../library/options.ref.php:1026
+msgid "Define and reorder these however you want."
+msgstr ""
+
+#: ../library/options.ref.php:1038
+msgid "Select Fields"
+msgstr ""
+
+#: ../library/options.ref.php:1044
+msgid "Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1054
+msgid "Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1065
+msgid "Select Image"
+msgstr ""
+
+#: ../library/options.ref.php:1066
+msgid "A preview of the selected image will appear underneath the select box."
+msgstr ""
+
+#: ../library/options.ref.php:1078
+msgid "You can easily add a variety of data from WordPress."
+msgstr ""
+
+#: ../library/options.ref.php:1084
+msgid "Categories Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1093
+msgid "Categories Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1101
+msgid "Pages Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1110
+msgid "Pages Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1118
+msgid "Tags Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1127
+msgid "Tags Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1135
+msgid "Menus Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1144
+msgid "Menus Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1152
+msgid "Post Type Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1161
+msgid "Post Type Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1171
+msgid "Post Type Multi Select Option + Sortable"
+msgstr ""
+
+#: ../library/options.ref.php:1172
+msgid "This field also has sortable enabled!"
+msgstr ""
+
+#: ../library/options.ref.php:1179
+msgid "Posts Select Option2"
+msgstr ""
+
+#: ../library/options.ref.php:1188
+msgid "Posts Multi Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1196
+msgid "User Role Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1205
+msgid "Capabilities Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1213
+msgid "Elusive Icons Select Option"
+msgstr ""
+
+#: ../library/options.ref.php:1215
+msgid "Here's a list of all the elusive icons by name and icon."
+msgstr ""
+
+#: ../library/options.ref.php:1223
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../library/options.ref.php:1224
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../library/options.ref.php:1225
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../library/options.ref.php:1229
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../library/options.ref.php:1236 ../library/options.ref.php:1372
+msgid "Documentation"
+msgstr ""
+
+#: ../library/options.ref.php:1254
+msgid "Additional Fields"
+msgstr ""
+
+#: ../library/options.ref.php:1261
+msgid "Date Option"
+msgstr ""
+
+#: ../library/options.ref.php:1272
+msgid "Button Set Option"
+msgstr ""
+
+#: ../library/options.ref.php:1282
+msgid "This is the info field, if you want to break sections up."
+msgstr ""
+
+#: ../library/options.ref.php:1288 ../library/options.ref.php:1296
+msgid "This is a title."
+msgstr ""
+
+#: ../library/options.ref.php:1289
+msgid "This is an info field with the warning style applied and a header."
+msgstr ""
+
+#: ../library/options.ref.php:1297
+msgid "This is an info field with the success style applied, a header and an icon."
+msgstr ""
+
+#: ../library/options.ref.php:1309
+msgid "Custom Field Callback"
+msgstr ""
+
+#: ../library/options.ref.php:1310
+msgid "This is a completely unique field type"
+msgstr ""
+
+#: ../library/options.ref.php:1311
+msgid ""
+"This is created with a callback function, so anything goes in this field. Make sure to "
+"define the function though."
+msgstr ""
+
+#: ../library/options.ref.php:1317
+msgid "Group - BETA"
+msgstr ""
+
+#: ../library/options.ref.php:1318
+msgid "Group any items together. Experimental. Use at your own risk."
+msgstr ""
+
+#: ../library/options.ref.php:1319
+msgid "Group"
+msgstr ""
+
+#: ../library/options.ref.php:1325
+msgid "testing fold with Group"
+msgstr ""
+
+#: ../library/options.ref.php:1332
+msgid "Text"
+msgstr ""
+
+#: ../library/options.ref.php:1333
+msgid "Here you put your subtitle"
+msgstr ""
+
+#: ../library/options.ref.php:1339
+msgid "Testing select"
+msgstr ""
+
+#: ../library/options.ref.php:1357
+#, fuzzy
+msgid "Theme Information"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.ref.php:1384
+#, fuzzy
+msgid "Theme Information 1"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.ref.php:1385 ../library/options.ref.php:1391
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../library/options.ref.php:1390
+#, fuzzy
+msgid "Theme Information 2"
+msgstr "Visiter le site du thème Projector"
+
+#: ../library/options.ref.php:1395
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../library/options.ref.php:1490
+#, php-format
+msgid ""
+"<p>Did you know that Redux sets a global variable for you? To access any of your saved "
+"options from within your code you can use your global variable: <strong>$%1$s</strong></"
+"p>"
+msgstr ""
+
+#: ../library/options.ref.php:1492
+msgid ""
+"<p>This text is displayed above the options panel. It isn't required, but more info is "
+"always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../library/options.ref.php:1496
+msgid ""
+"<p>This text is displayed below the options panel. It isn't required, but more info is "
+"always better! The footer_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../library/projector.php:138
+msgid "Access"
+msgstr ""
+
+#: ../library/projector.php:166
+msgid "Awaiting moderation."
+msgstr ""
+
+#: ../library/projector.php:171
+#, fuzzy, php-format
+msgid "%s ago"
+msgstr "Nouveau %s"
+
+#: ../single-msk_wip.php:108
+#, php-format
+msgid "See version %s"
+msgstr ""
+
+#~ msgid "Search %a"
+#~ msgstr "Rerchercher %s"
