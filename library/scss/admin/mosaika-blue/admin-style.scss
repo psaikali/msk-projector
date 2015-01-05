@@ -1,0 +1,85 @@
+/*
+ * Les variables de bases
+ */
+
+$text-color: #fff;                                              // Couleur de texte
+$base-color: #2f3348;                                           // Couleur de base des fonds (utilisée par défaut pour la sidebar d'admin + topbar d'admin)
+$icon-color: desaturate(lighten($base-color, 25%), 10%);        // Couleur des icônes
+$highlight-color: saturate(lighten($base-color, 20%), 10%);     // Couleur d'un menu de sidebar/top bar actif
+$notification-color: #79b75c;                                   // Couleur de base des notifications (nombre de nouveaux coms. ou de MàJ par ex)
+
+$body-background: #eff0f1;                                      // Couleur de fond de la page
+$link: #355fb6;                                                 // Couleur des liens dans la page
+$link-focus: lighten( $link, 10% );                             // Couleur des liens de la page au survol
+$button-color: #e69f23;                                         // Couleur des boutons principaux de la page
+$form-checked: $button-color;                                   // Couleur de la croix dans les checkbox
+
+
+/*
+ * Le menu d'admin et la topbar d'admin
+ */
+
+$menu-text: $text-color;                                        // Couleur de texte dans la sidebar d'admin + topbar d'admin
+$menu-icon: $icon-color;                                        // Couleur des icônes dans la sidebar d'admin + topbar d'admin
+$menu-background: $base-color;                                  // Couleur de fond de la sidebar d'admin
+
+$menu-highlight-text: $text-color;                              // Item de menu survolé : couleur du texte
+$menu-highlight-icon: $text-color;                              // Item de menu survolé : couleur de l'icône
+$menu-highlight-background: $highlight-color;                   // Item de menu survolé : couleur du fond du bloc
+
+$menu-current-text: $menu-highlight-text;                       // Item de menu sélectionné : couleur du texte
+$menu-current-icon: $button-color;                              // Item de menu sélectionné : couleur de l'icône
+$menu-current-background: $menu-highlight-background;           // Item de menu sélectionné : couleur du fond du bloc
+
+$menu-submenu-text: mix( $base-color, $text-color, 30% );       // Item de sous-menu sélectionné : couleur du text
+$menu-submenu-background: darken( $base-color, 7% );            // Couleur principale de sous-menu
+$menu-submenu-background-alt: lighten( $base-color, 10% );      // Couleur secondaire de sous-menu (liens topbar "A Propos", liste topbar des sites du network par ex)
+
+$menu-submenu-focus-text: $highlight-color;                     // Item de sous-menu survolé : couleur du texte
+$menu-submenu-current-text: $text-color;                        // Item de sous-menu sélectionné : couleur du texte
+
+$menu-bubble-text: $text-color;                                 // Couleur de texte d'une bulle de notification (nombre de nouveaux coms. ou de MàJ par ex)
+$menu-bubble-background: $notification-color;                   // Couleur de fond d'une bulle de notification
+$menu-bubble-current-text: $text-color;                         // Couleur de texte d'une bulle de notification survolée ou sélectionnée
+$menu-bubble-current-background: $menu-submenu-background;      // Couleur de fond d'une bulle de notification survolée ou sélectionnée
+
+$menu-collapse-text: $menu-icon;                                // Couleur de texte du lien "Réduire le menu" en bas de la sidebar
+$menu-collapse-icon: $menu-icon;                                // Couleur de l'icône du lien "Réduire le menu" en bas de la sidebar
+$menu-collapse-focus-text: $text-color;                         // Couleur de texte du lien "Réduire le menu" en bas de la sidebar au survol
+$menu-collapse-focus-icon: $menu-highlight-icon;                // Couleur de l'icône du lien "Réduire le menu" en bas de la sidebar au survol
+
+
+/*
+ * La topbar d'admin
+ */
+
+$adminbar-avatar-frame: lighten( $menu-background, 7% );        // Petite bordure autour de l'avatar en haut à droite dans la topbar
+$adminbar-input-background: lighten( $menu-background, 7% );    // Couleur de fond de l'input de recherche dans la topbar
+
+$menu-customizer-text: red;                                     // Aucune idée !
+
+
+/*
+ * On importe la base (colors.scss) puis admin.scss qui vient mijoter le tout
+ * _colors.scss => provient de /wp-admin/css/colors.css (renommé en SCSS)
+ * _admin.scsss => provient de /wp-admin/css/colors/_admin.scss
+ *
+ /!\  N'oubliez pas de copier /wp-admin/css/colors/_mixins.scss et /wp-admin/css/colors/_variables.scss dans le même dossier d'import d'_admin.scss cité ci-dessous /!\
+ *
+ */
+
+@import "../_colors.scss";
+@import "../_admin.scss";
+
+
+/*
+ * Et si besoin, on édite les propriétés CSS que l'on veut
+ */
+
+#wpadminbar {
+	background-color: darken($base-color, 7%);
+}
+
+.wrap h2 {
+	font-weight: 700;
+}

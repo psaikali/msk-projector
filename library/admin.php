@@ -209,3 +209,30 @@ function msk_make_site_private() {
 	update_option('blog_public', 0);
 }
 add_action('after_switch_theme', 'msk_make_site_private', 10);
+
+/*
+ * Add admin color palette
+ */
+function msk_custom_admin_color_palette() {
+	wp_admin_css_color(
+		'msk-colors',
+		__('Mosaika'),
+		get_stylesheet_directory_uri() . '/library/css/admin/mosaika-blue/colors.css',
+		array('#212432', '#2f3348', '#e69f23', '#79b75c'),
+		array('#aa9d88', '#9ebaa0', '#738e96', '#f2fcff')
+	);
+}
+add_action('admin_init', 'msk_custom_admin_color_palette');
+
+/*
+ * Make the Mosaika palette default
+ */
+function msk_default_admin_color_palette($user_id) {
+	$args = array(
+		'ID' => $user_id,
+		'admin_color' => 'msk-colors'
+	);
+
+	wp_update_user($args);
+}
+add_action('user_register', 'msk_default_admin_color_palette');
